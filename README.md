@@ -22,10 +22,10 @@ interfonul să trimită către apartamentul ‚a’ semnalul care face ca postul
 sune.  
 a. Dacă din apartamentul ‚a’ se activează  semnalul de acceptare cmd se va șterge LCD-ul, se 
 va afişă mesajul „Deschis!,  iar apoi → OPEN.  
-b. Dacă după 15 secunde cmd=’0’, → FMSG.   
+b. Dacă t2 > 15 secunde && cmd=’0’,apoi → FMSG.   
 
 3. OPEN. Se activează semnalul care deschide broasca.  
-a. Dacă timpul petrecut în starea OPEN t3>5s → FMSG. 
+a. Dacă timpul petrecut în starea OPEN t3 > 5s → FMSG. 
 
 4. COD1 – prima cifra a codului.  
 a. Dacă tasta k este o cifra zecimală aceasta se va memora, se va afişa caracterul ‚*’ şi apoi → 
