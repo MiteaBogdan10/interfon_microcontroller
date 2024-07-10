@@ -1,0 +1,113 @@
+<circuit version="1.1.0-SR0" rev="1917" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Rail" CircId="Rail-10" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="664,12" rotation="0" hflip="1" vflip="1" label="Rail-62" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="664,88" rotation="0" hflip="1" vflip="1" label="ResistorDip-40" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="1 kΩ" Size="4" PullUp="false" PuVolt="5 V" />
+
+<item itemtype="KeyPad" CircId="KeyPad-8" mainComp="false" Show_id="false" Show_Val="false" Pos="492,-32" rotation="0" hflip="1" vflip="1" label="KeyPad-22" idLabPos="-8,-16" labelrot="0" valLabPos="0,0" valLabRot="0" Rows="4" Cols="4" Key_Labels="123A456B789C*0#D" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="120,84" rotation="0" hflip="1" vflip="1" label="Ground-80" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Hd44780" CircId="Hd44780-6" mainComp="false" Show_id="true" Show_Val="false" Pos="132,28" rotation="-360" hflip="1" vflip="1" label="Hd44780-121" idLabPos="70,-82" labelrot="0" valLabPos="0,0" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="MCU" CircId="mega16-5" mainComp="false" Show_id="true" Show_Val="false" Pos="304,84" rotation="0" hflip="1" vflip="1" label="atmega16-2" idLabPos="0,-20" labelrot="0" valLabPos="0,0" valLabRot="0" Frequency="16 MHz" Program="interfon/interfon/Debug/interfon.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" SerialMon="-1" />
+
+<item itemtype="Resistor" CircId="Resistor-15" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="664,160" rotation="0" hflip="1" vflip="1" label="Resistor-15" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Push" CircId="Push-24" mainComp="false" Show_id="false" Show_Val="false" Pos="184,156" rotation="0" hflip="1" vflip="1" label="Push-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="708,80" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="708,72" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="708,64" />
+
+<item itemtype="Node" CircId="Node-4" mainComp="false" Pos="492,64" />
+
+<item itemtype="Node" CircId="Node-3" mainComp="false" Pos="508,72" />
+
+<item itemtype="Node" CircId="Node-2" mainComp="false" Pos="524,80" />
+
+<item itemtype="Node" CircId="Node-1" mainComp="false" Pos="540,88" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="708,12" />
+
+<item itemtype="Node" CircId="Node-25" mainComp="false" Pos="280,156" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="120,68" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Hd44780-6-PinEn" endpinid="mega16-5-PORTD5" pointList="164,36,164,236,296,236" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Hd44780-6-PinRS" endpinid="mega16-5-PORTD4" pointList="148,36,148,228,296,228" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Hd44780-6-dataPin5" endpinid="mega16-5-PORTD1" pointList="212,36,212,204,296,204" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Hd44780-6-dataPin7" endpinid="mega16-5-PORTD3" pointList="228,36,228,220,296,220" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Hd44780-6-dataPin6" endpinid="mega16-5-PORTD2" pointList="220,36,220,212,296,212" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="KeyPad-8-Pin2" endpinid="mega16-5-PORTA6" pointList="556,8,568,8,568,140,360,140" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="KeyPad-8-Pin3" endpinid="mega16-5-PORTA7" pointList="556,24,560,24,560,148,360,148" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="KeyPad-8-Pin1" endpinid="mega16-5-PORTA5" pointList="556,-8,580,-8,580,132,360,132" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="KeyPad-8-Pin0" endpinid="mega16-5-PORTA4" pointList="556,-24,592,-24,592,124,360,124" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="ResistorDip-9-resistor0-ePin1" endpinid="Node-11-0" pointList="680,64,708,64" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="ResistorDip-9-resistor1-ePin3" endpinid="Node-12-0" pointList="680,72,708,72" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="ResistorDip-9-resistor2-ePin5" endpinid="Node-13-0" pointList="680,80,708,80" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="Node-12-2" endpinid="Node-11-1" pointList="708,72,708,64" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="ResistorDip-9-resistor3-ePin7" endpinid="Node-13-1" pointList="680,88,708,88,708,80" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="Node-13-2" endpinid="Node-12-1" pointList="708,80,708,72" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="KeyPad-8-Pin7" endpinid="Node-1-0" pointList="540,40,540,88" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="KeyPad-8-Pin5" endpinid="Node-3-0" pointList="508,40,508,72" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="KeyPad-8-Pin4" endpinid="Node-4-0" pointList="492,40,492,64" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="KeyPad-8-Pin6" endpinid="Node-2-0" pointList="524,40,524,80" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="ResistorDip-9-resistor0-ePin0" endpinid="Node-4-1" pointList="648,64,492,64" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Node-4-2" endpinid="mega16-5-PORTA0" pointList="492,64,492,92,360,92" />
+
+<item itemtype="Connector" uid="Connector-54" startpinid="ResistorDip-9-resistor1-ePin2" endpinid="Node-3-1" pointList="648,72,508,72" />
+
+<item itemtype="Connector" uid="Connector-55" startpinid="Node-3-2" endpinid="mega16-5-PORTA1" pointList="508,72,508,100,360,100" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="ResistorDip-9-resistor2-ePin4" endpinid="Node-2-1" pointList="648,80,524,80" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="Node-2-2" endpinid="mega16-5-PORTA2" pointList="524,80,524,108,360,108" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="ResistorDip-9-resistor3-ePin6" endpinid="Node-1-1" pointList="648,88,540,88" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Node-1-2" endpinid="mega16-5-PORTA3" pointList="540,88,540,116,360,116" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Resistor-15-rPin" endpinid="Node-16-1" pointList="680,160,748,160,748,12,708,12" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Node-11-2" endpinid="Node-16-0" pointList="708,64,708,12" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Node-16-2" endpinid="Rail-10-outnod" pointList="708,12,680,12" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Hd44780-6-dataPin4" endpinid="mega16-5-PORTD0" pointList="204,36,204,196,296,196" />
+
+<item itemtype="Connector" uid="Connector-83" startpinid="Node-25-1" endpinid="Push-24-switch0pinN" pointList="280,156,200,156" />
+
+<item itemtype="Connector" uid="Connector-84" startpinid="mega16-5-RST" endpinid="Node-25-0" pointList="296,156,280,156" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="Node-25-2" endpinid="Resistor-15-lPin" pointList="280,156,280,264,632,264,632,160,648,160" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="Push-24-pinP0" endpinid="Node-26-1" pointList="168,156,96,156,96,68,120,68" />
+
+<item itemtype="Connector" uid="Connector-87" startpinid="Hd44780-6-PinRW" endpinid="Node-26-0" pointList="156,36,156,68,120,68" />
+
+<item itemtype="Connector" uid="Connector-88" startpinid="Node-26-2" endpinid="Ground-7-Gnd" pointList="120,68,120,68" />
+
+</circuit>
